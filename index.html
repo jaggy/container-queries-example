@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+		<link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="leading-normal tracking-normal antialiased">
+<div class="max-w-4xl w-full mx-auto py-12" x-data="{
+			reviews: [
+				{
+				 	title: 'One',
+				 	caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corporis debitis dolore, ea facilis id ipsum labore libero.',
+				},
+				{
+				 	title: 'Two',
+				 	caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corporis debitis dolore, ea facilis id ipsum labore libero.',
+				},
+				{
+				 	title: 'Three',
+				 	caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corporis debitis dolore, ea facilis id ipsum labore libero.',
+				},
+				{
+				 	title: 'Four',
+				 	caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corporis debitis dolore, ea facilis id ipsum labore libero.',
+				},
+				{
+				 	title: 'Five',
+				 	caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corporis debitis dolore, ea facilis id ipsum labore libero.',
+				},
+				{
+				 	title: 'Six',
+				 	caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corporis debitis dolore, ea facilis id ipsum labore libero.',
+				},
+				{
+				 	title: 'Seven',
+				 	caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corporis debitis dolore, ea facilis id ipsum labore libero.',
+				},
+				{
+				 	title: 'Eight',
+				 	caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corporis debitis dolore, ea facilis id ipsum labore libero.',
+				},
+				{
+				 	title: 'Nine',
+				 	caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corporis debitis dolore, ea facilis id ipsum labore libero.',
+				},
+			],
+		}">
+		<div class="grid gap-6 grid-cols-3">
+				<template x-for="review in reviews">
+						<div class="@container col-span-1 first-of-type:col-span-2 border self-start">
+								<div class="flex flex-col @sm:flex-row @sm:gap-2">
+										<div class="aspect-[16/9] bg-gray-200 @sm:bg-red-400 @sm:aspect-[4/3] @sm:h-56">
+										</div>
+										<div class="p-4">
+												<div class="font-medium" x-text="review.title"></div>
+												<div class="text-slate-700 text-sm" x-text="review.caption"></div>
+										</div>
+								</div>
+						</div>
+				</template>
+		</div>
+</body>
+</html>
